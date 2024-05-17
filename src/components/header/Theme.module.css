@@ -1,0 +1,22 @@
+.theme {
+    width: 87px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-left: solid 1px #7A3535;
+}
+
+.theme svg {
+    height: 2.2em;
+    width: 2.2em;
+}
+
+.dark {
+    color: #FDFDFD;
+}
+
+.light {
+    color: #161313;
+}

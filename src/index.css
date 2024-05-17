@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.dark {
+  background-color: #161313;
+  transition: 1s;
+}
+
+.light {
+  background-color: #FDFDFD;
+  transition: 1s;
+}
+
+section {
+  height: 1500px;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  max-width: 107.5em;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 5.5em;
+}
