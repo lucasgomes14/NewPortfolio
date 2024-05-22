@@ -1,0 +1,44 @@
+.logo {
+    font-size: 1.8em;
+    margin-left: 5em;
+    display: flex;
+    justify-content: center;
+    width: 6.8em;
+    flex-wrap: nowrap;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.dark {
+    color: #FDFDFD;
+    transition: 1s;
+}
+
+.light {
+    color: #161313;
+    transition: 1s;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 870px) {
+    .logo {
+        font-size: 1.5em;
+        margin-left: 3em;
+    }
+}
+
+@media screen and (max-width: 869px) and (min-width: 768px) {
+    .logo {
+        font-size: 1.3em;
+        margin-left: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 2em;
+        margin-left: 0;
+    }
+}

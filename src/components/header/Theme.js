@@ -6,7 +6,7 @@ import styles from "./Theme.module.css"
 function Theme({ theme }) {
     return (
         <div className={styles.theme}>
-            {theme ? <CiLight className={styles.dark} /> : <MdDarkMode className={styles.light} />}            
+            {theme === "dark" ? <CiLight className={styles[theme]} /> : <MdDarkMode className={styles[theme]} />}            
         </div>
     )
 }

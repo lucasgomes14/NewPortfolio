@@ -1,5 +1,5 @@
 .theme {
-    width: 87px;
+    width: 5.5em;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -9,8 +9,8 @@
 }
 
 .theme svg {
-    height: 2.2em;
-    width: 2.2em;
+    height: 1.8em;
+    width: 1.8em;
 }
 
 .dark {
@@ -19,4 +19,38 @@
 
 .light {
     color: #161313;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 870px) {
+    .theme {
+        width: 4.5em;
+    }
+
+    .theme svg {
+        height: 1.5em;
+        width: 1.5em;
+    }
+}
+
+@media screen and (max-width: 869px) and (min-width: 768px) {
+    .theme {
+        width: 4.5em;
+    }
+
+    .theme svg {
+        height: 1.5em;
+        width: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .theme {
+        border-left: none;
+        width: 3em;
+    } 
+
+    .theme svg {
+        height: 1.5em;
+        width: 1.5em;
+    }
 }

@@ -4,6 +4,10 @@ import Navbar from "./components/header/Navbar"
 import Line from "./components/header/Line"
 import Theme from "./components/header/Theme"
 import Background from "./components/layout/Background"
+import Logo from "./components/header/Logo"
+
+import styles from "./App.module.css"
+import Toggle from "./components/header/Toggle"
 
 function App() {
     const [current, setCurrent] = useState()
@@ -30,18 +34,24 @@ function App() {
         }
     }, [])
 
-    const [theme, setTheme] = useState(false)
+    const [theme, setTheme] = useState("light")
 
     function darkOrLight() {
-        setTheme(!theme)
+        if(theme === "light") {
+            setTheme("dark")
+        } else {
+            setTheme("light")
+        }
     }
 
     return (
-        <div className={theme ? "dark" : "light"}>
+        <div className={theme}>
             <Background />
-            <div className="navbar">
+            <div className={styles.navbar}>
+                <Toggle />
+                <Logo className={styles.logo} theme={theme} />
                 <Navbar current={current} theme={theme} />
-                <div onClick={darkOrLight}>
+                <div className={styles.buttonTheme} onClick={darkOrLight}>
                     <Theme theme={theme} />
                 </div>
             </div>

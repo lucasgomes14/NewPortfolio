@@ -146,7 +146,7 @@
   100% {
     left: 35%;
     top: 10%;
-  } 
+  }
 }
 
 .opacity_50 {
@@ -163,4 +163,48 @@
 
 .bg_redStrong {
   background-color: rgb(68, 29, 29);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 870px) {
+  .bg_shape1 {
+    width: 429px;
+    height: 656px;
+  }
+
+  .bg_shape2 {
+    width: 463px;
+    height: 662px;
+  }
+}
+
+@media screen and (max-width: 869px) and (min-width: 768px) {
+  .bg_shape1 {
+    width: 279px;
+    height: 506px;
+  }
+
+  .bg_shape2 {
+    width: 463px;
+    height: 662px;
+  }
+
+  .bg_blur {
+    filter: blur(140px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg_shape1 {
+    width: 179px;
+    height: 406px;
+  }
+
+  .bg_shape2 {
+    width: 363px;
+    height: 562px;
+  }
+
+  .bg_blur {
+    filter: blur(135px);
+  }
 }
